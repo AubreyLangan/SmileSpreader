@@ -13,3 +13,25 @@ const RandomActofKindness = () => {
         "Leave a kind note in a public place for someone to find.",
         "Volunteer your time to help others in need.",
     ];
+
+    const [randomAct, setRandomAct] = useState('');
+
+    const generateRandomAct = () => {
+        const randomIndex = Math.floor(Math.random() * actsOfKindness.length);
+        setRandomAct(actsOfKindness[randomIndex]);
+    };
+
+    return (
+        <div>
+            <h2>Random Act of Kindness</h2>
+            <button onClick={generateRandomAct}>Generate Random Act</button>
+            {randomAct && (
+                <div>
+                    <p>{randomAct}</p>
+                </div>
+            )}
+        </div>
+    );
+};
+
+export default RandomActofKindness;
