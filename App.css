@@ -9,3 +9,32 @@
   color: white;
   font-size: 30px;
 }
+
+.random-act-container {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+.generate-button {
+  background-color: lightslategray;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.generate-button:hover {
+  background-color: darkgrey;
+}
+
+.random-act {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
