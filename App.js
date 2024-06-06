@@ -1,35 +1,20 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import CustomNavbar from "./components/CustomNavbar"
 import Header from "./components/Header";
+import RandomActofKindness from "./components/Generator";
+import Tracker from "./components/Tracker";
 
 function App() {
     return (
         <div className="App">
             <Header />
-            <Navbar expand="lg" className="bg-body-tertiary">
-                <Container>
-                    <Navbar.Brand href="#home">Smile Spreaders</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
-                            <Nav.Link href="#home"></Nav.Link>
-                            <Nav.Link href="#link"></Nav.Link>
-                            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                <NavDropdown.Item href="action/3.4">Separated link</NavDropdown.Item>
-                            </NavDropdown>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
+            <CustomNavbar />
+            <h1>Welcome to Smile Spreaders</h1>
+            <RandomActofKindness />
+            <Tracker />
         </div>
-    )
+    );
 }
-
 export default App;
