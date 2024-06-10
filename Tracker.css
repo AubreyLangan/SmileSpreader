@@ -1,0 +1,60 @@
+.tracker-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.task-input-container {
+    margin-bottom: 20px;
+}
+
+.task-input-container input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #555;
+    border-radius: 3px;
+}
+
+.task-input-container button {
+    padding: 10px;
+    background-color: turquoise;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.task-input-container button:hover {
+    background-color: darkturquoise;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-list li.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.task-list button {
+    background-color: turquoise;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.task-list button:hover {
+    background-color: #555;
+}
