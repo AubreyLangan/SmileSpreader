@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './Generator.css';
 
 const RandomActofKindness = () => {
     const actsOfKindness = [
@@ -22,11 +23,11 @@ const RandomActofKindness = () => {
     };
 
     return (
-        <div>
+        <div className="random-act-container">
             <h2>Random Act of Kindness</h2>
-            <button onClick={generateRandomAct}>Generate Random Act</button>
+            <button className="generate-button" onClick={generateRandomAct}>Generate Random Act</button>
             {randomAct && (
-                <div>
+                <div className="random-act">
                     <p>{randomAct}</p>
                 </div>
             )}
