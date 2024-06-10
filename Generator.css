@@ -1,0 +1,24 @@
+.random-act-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.generate-button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: turquoise;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.generate-button:hover {
+    background-color: darkturquoise;
+}
+
+.random-act {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #555;
+}
