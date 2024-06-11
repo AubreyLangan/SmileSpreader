@@ -24,3 +24,29 @@
 .chat-message {
     margin-bottom: 5px;
 }
+
+.chat-input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.username-input,
+.message-input {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    border: 1px solid #555;
+}
+
+.send-button {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: turquoise;
+    color: white;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    background-color: darkturquoise;
+}
